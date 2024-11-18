@@ -1,0 +1,21 @@
+[package]
+name = "anychain-filecoin"
+description = "A Rust library for Filecoin-focused cryptocurrency wallets, enabling seamless transactions on the Filecoin blockchain"
+version = "0.1.8"
+keywords = ["filecoin", "blockchain", "cryptocurrencies", "wallet", "transactions"]
+
+# Workspace inherited keys
+authors = { workspace = true }
+edition = { workspace = true }
+homepage = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[features]
+default = ["std"]
+std = ["anychain-core/std"]
+arb = ["dep:arbitrary"]

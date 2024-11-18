@@ -1,0 +1,18 @@
+[package]
+name = "anychain-ethereum"
+description = "A Rust library for Ethereum-focused cryptocurrency wallets, enabling seamless transactions on the Ethereum blockchain"
+version = "0.1.18"
+keywords = ["blockchain", "crypto", "cryptocurrencies", "ethereum", "wallet"]
+
+# Workspace inherited keys
+authors = { workspace = true }
+edition = { workspace = true }
+homepage = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+
+[dependencies]
+
+[features]
+default = ["std"]
+std = ["anychain-core/std"]

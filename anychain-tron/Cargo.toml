@@ -1,0 +1,16 @@
+[package]
+name = "anychain-tron"
+description = "A Rust library for Tron-focused cryptocurrency wallets, enabling seamless transactions on the Tron blockchain"
+version = "0.2.7"
+keywords = ["tron", "blockchain", "cryptocurrencies", "wallet", "transactions"]
+
+# Workspace inherited keys
+authors = { workspace = true }
+edition = { workspace = true }
+homepage = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]

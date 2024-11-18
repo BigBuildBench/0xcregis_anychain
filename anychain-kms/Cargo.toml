@@ -1,0 +1,30 @@
+[package]
+name = "anychain-kms"
+description = "A Rust library providing Key Management Schema for AnyChain. Handles general security and signature algorithms."
+version = "0.1.12"
+keywords = ["cryptography", "security", "signature", "algorithm"]
+
+# Workspace inherited keys
+authors = { workspace = true }
+edition = { workspace = true }
+homepage = { workspace = true }
+license = { workspace = true }
+repository = { workspace = true }
+
+[dependencies]
+
+[dev-dependencies]
+hex-literal = "0.4"
+
+[features]
+alloc = ["zeroize/alloc"]
+std = ["alloc"]
+chinese-simplified = []
+chinese-traditional = []
+# Note: English is the standard for bip39 so always included
+french = []
+italian = []
+japanese = []
+korean = []
+spanish = []
+default = ["std", "chinese-simplified", "chinese-traditional", "french", "italian", "japanese", "korean", "spanish"]
